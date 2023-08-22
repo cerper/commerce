@@ -1,0 +1,25 @@
+{% extends  "auctions/layout.html" %}
+{% block body %}
+<h2>Active Watchlist</h2>
+<div class="row mx-3">
+    
+        {% for entry in auction %}
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+        {% if entry.image %}
+    
+                <img class="card-img-top" src="{{entry.image}}" alt="{{entry.item}}">
+
+        {% endif %} 
+                <h5 class="card-title">{{entry.item}}</h5>
+                <p class="card-text">{{entry.description}}</p>
+                <p class="card-text">{{entry.price}}$</p>
+                <a href="{% url 'listing' entry.id %}" class="btn btn-primary">Go to this listening</a>
+            </div>
+        </div>
+   
+    
+    {% endfor %}
+</div>
+
+{% endblock %}
