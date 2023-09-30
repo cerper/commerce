@@ -1,0 +1,22 @@
+textarea {
+    min-height: 400px;
+}
+.read{
+    background-color: grey;
+ }
+.unread{
+    background-color: antiquewhite;
+ }
+ .reply{
+    display: flex;
+    margin: 30px;
+    align-self: flex-end;
+
+ }
+ .list-group-item{
+    border: solid black 1px;
+    padding: 10px;
+ }
+#details-view{
+   background-image: url("https://www.istockphoto.com/es/fotos/atardecer");
+ }
