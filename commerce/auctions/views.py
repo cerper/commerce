@@ -31,7 +31,7 @@ def category(request):
             "category": all_category
         })
     else:
-        return render(request, "auctions/category.html")
+        return render(request, "auctions/indexp.html")
        
 
 def login_view(request):
